@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <NavBar class="home-bar">
-            <template #center><div class='home-bar'>购物街</div></template>
+            <template #center><div class='home-bar'>购物</div></template>
         </NavBar>
         <tab-control :titles='["流行","精款","精选"]' @tabClick="tabClick" class="tab-controll" ref="tabControll1" v-show="isTabFixed" />
         <scroll class="content" ref="scroll" :probe-type="3" :pull-up-load="true" @scroll="contentScroll" @pullingUp="loadMore">
